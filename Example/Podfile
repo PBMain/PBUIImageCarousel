@@ -1,0 +1,14 @@
+source 'https://github.com/PBMain/PBCocoaPods.git'
+source 'https://github.com/PBCocoaPods/Specs.git'
+
+use_frameworks!
+
+target 'PBUIImageCarousel_Example' do
+  pod 'PBUIImageCarousel', :path => '../'
+
+  target 'PBUIImageCarousel_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end

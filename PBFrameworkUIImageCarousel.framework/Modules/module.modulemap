@@ -1,0 +1,6 @@
+framework module PBFrameworkUIImageCarousel {
+  umbrella header "PBFrameworkUIImageCarousel.h"
+
+  export *
+  module * { export * }
+}
