@@ -14,6 +14,35 @@ FOUNDATION_EXPORT double PBFrameworkUIImageCarouselVersionNumber;
 //! Project version string for PBFrameworkUIImageCarousel.
 FOUNDATION_EXPORT const unsigned char PBFrameworkUIImageCarouselVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <PBFrameworkUIImageCarousel/PublicHeader.h>
-
-
+#import <PBFrameworkUIImageCarousel/ImageDuplicateViewController.h>;
+#import <PBFrameworkUIImageCarousel/PBVideoSliderBasic.h>;
+#import <PBFrameworkUIImageCarousel/ICGThumbView.h>;
+#import <PBFrameworkUIImageCarousel/CommentWebViewController.h>;
+#import <PBFrameworkUIImageCarousel/PBVideoUploadsBanner.h>;
+#import <PBFrameworkUIImageCarousel/ImageDuplicateCollectionViewCell.h>;
+#import <PBFrameworkUIImageCarousel/CommentsViewController.h>;
+#import <PBFrameworkUIImageCarousel/ICGRulerView.h>;
+#import <PBFrameworkUIImageCarousel/PBFrameworkUIImageCarousel.h>;
+#import <PBFrameworkUIImageCarousel/UIView_DetailPopup.h>;
+#import <PBFrameworkUIImageCarousel/LoadingView.h>;
+#import <PBFrameworkUIImageCarousel/ICGVideoTrimmerView.h>;
+#import <PBFrameworkUIImageCarousel/CommentWebView.h>;
+#import <PBFrameworkUIImageCarousel/CommentsYourCommentCell.h>;
+#import <PBFrameworkUIImageCarousel/PBPendingVideosVC.h>;
+#import <PBFrameworkUIImageCarousel/ImageDetailCollectionViewCell.h>;
+#import <PBFrameworkUIImageCarousel/PBPodUIImageCarousel_ServicesHeaders.h>;
+#import <PBFrameworkUIImageCarousel/FavoritesViewIndicator.h>;
+#import <PBFrameworkUIImageCarousel/PBVideoTrimmer.h>;
+#import <PBFrameworkUIImageCarousel/PBPendingVideoCell.h>;
+#import <PBFrameworkUIImageCarousel/LocationServicesDeniedView.h>;
+#import <PBFrameworkUIImageCarousel/PBVideoSortingMenuView.h>;
+#import <PBFrameworkUIImageCarousel/ImageDuplicateView.h>;
+#import <PBFrameworkUIImageCarousel/UIView_PhotoContainerView.h>;
+#import <PBFrameworkUIImageCarousel/CommentsOthersCommentCell.h>;
+#import <PBFrameworkUIImageCarousel/MoreWaysToShareView.h>;
+#import <PBFrameworkUIImageCarousel/Utilities.h>;
+#import <PBFrameworkUIImageCarousel/ImageDetailViewController.h>;
+#import <PBFrameworkUIImageCarousel/UIView_AlbumView.h>;
+#import <PBFrameworkUIImageCarousel/ICGVideoTrimmer.h>;
+#import <PBFrameworkUIImageCarousel/UIView_ImageDetailView.h>;
+#import <PBFrameworkUIImageCarousel/PBVideoPlayback.h>;
