@@ -22,7 +22,6 @@ FOUNDATION_EXPORT const unsigned char PBFrameworkUIImageCarouselVersionString[];
 #import <PBFrameworkUIImageCarousel/ImageDuplicateCollectionViewCell.h>;
 #import <PBFrameworkUIImageCarousel/CommentsViewController.h>;
 #import <PBFrameworkUIImageCarousel/ICGRulerView.h>;
-#import <PBFrameworkUIImageCarousel/PBFrameworkUIImageCarousel.h>;
 #import <PBFrameworkUIImageCarousel/UIView_DetailPopup.h>;
 #import <PBFrameworkUIImageCarousel/LoadingView.h>;
 #import <PBFrameworkUIImageCarousel/ICGVideoTrimmerView.h>;
