@@ -14,4 +14,8 @@
 
 -(void) checkForLocationPermissions;
 
+@property (nonatomic) NSString *streamID;
+@property (nonatomic) NSString *streamName;
+@property (nonatomic) BOOL isLayedOut;
+
 @end

@@ -18,6 +18,8 @@
 @property (retain,nonatomic) IBOutlet UIView *viewHeartView;
 @property (weak, nonatomic) IBOutlet UILabel *lblHeartCounter;
 @property (weak, nonatomic) IBOutlet UIView *viewDupes;
+@property (weak, nonatomic) IBOutlet UIView *dupeTapView;
+
 @property (weak, nonatomic) IBOutlet UIView *viewDupesBlack;
 @property (weak, nonatomic) IBOutlet UIButton *videoPlayButton;
 

@@ -48,6 +48,7 @@
 @property (nonatomic) IBOutlet UIBarButtonItem *backButton;
 
 @property (nonatomic) IBOutlet UIBarButtonItem *saveButton;
+@property (nonatomic) IBOutlet UIBarButtonItem *shareButton;
 @property (nonatomic) IBOutlet UILabel *lblLocation;
 @property (nonatomic) IBOutlet UILabel *lblTime;
 
@@ -63,12 +64,14 @@
 @property (nonatomic, assign) int imageId;
 
 @property (nonatomic) IBOutlet UIView *vSafeArea;
+@property (nonatomic) IBOutlet UIButton *btnSetCover;
 
 -(void) addImages:(NSMutableArray*)imgArray;
 -(void) removeImages:(NSMutableArray*)imgArray;
 -(void) setMainImage:(NSString*)image;
 -(IBAction)pressBack:(id)sender;
 -(IBAction)pressSettings:(id)sender;
+-(IBAction)pressShare:(id)sender;
 -(IBAction)pressSave:(id)sender;
 -(void)setDataProper : (NSIndexPath *) indexMain;
 @end

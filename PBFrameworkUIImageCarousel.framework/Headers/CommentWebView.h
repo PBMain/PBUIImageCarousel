@@ -5,6 +5,7 @@
 
 @property (retain,nonatomic) IBOutlet UIView *vWebviewContainer;
 @property (retain,nonatomic) IBOutlet UIView *vHeader;
+@property (retain,nonatomic) IBOutlet UIView *vStatusCover;
 @property (retain,nonatomic) IBOutlet UILabel *lblTitle;
 @property (retain,nonatomic) IBOutlet UIButton *btnBack;
 @property (retain,nonatomic) IBOutlet UIButton *btnClear;

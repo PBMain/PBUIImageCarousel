@@ -26,6 +26,9 @@
 // Check asset array for children with favorite statuses and apply them to parents
 +(NSArray*)applyFavoriteStatusesToParents:(NSArray*)arrayOfAssets;
 
+// Check asset array for children that aren't in their parent's array and place them there
++(void)putChildrenUnderParents:(NSArray*)arrayOfAssets completion:(void(^)(NSArray* parents, NSArray* childen))completion;
+
 +(void)loadCustomFonts;
 
 @end

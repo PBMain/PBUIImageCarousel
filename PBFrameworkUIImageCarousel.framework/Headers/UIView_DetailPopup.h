@@ -9,6 +9,7 @@
 @property (nonatomic) NSString *assetId;
 @property (nonatomic) NSString *filename;
 @property (nonatomic) NSString *creationDate;
+@property (nonatomic) NSString *creationDateUTC;
 @property (nonatomic) NSString *albumId;
 @property (nonatomic) NSString *albumName;
 @property (nonatomic) NSString *occasionId;
@@ -28,6 +29,7 @@
 @property (nonatomic) IBOutlet UIImageView *imgIconDeleteFromPhotoButler;
 
 @property (nonatomic) IBOutlet UILabel *lblImageInfo;
+@property (nonatomic) IBOutlet UILabel *lblDontWorry;
 
 @property (nonatomic) IBOutlet UIProgressView *progressDivider;
 

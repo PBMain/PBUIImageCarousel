@@ -73,4 +73,6 @@
 @property (nonatomic) NSMutableArray *arrayTinkerbellRealLinkAssets;
 @property (nonatomic) NSMutableArray *arrayTinkerbellPlayerLoopers;
 
+@property (nonatomic) BOOL blockRetryOfDeceleration;
+
 @end

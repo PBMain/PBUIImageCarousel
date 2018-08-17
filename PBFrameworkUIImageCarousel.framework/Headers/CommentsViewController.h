@@ -21,6 +21,7 @@
 
 @property (nonatomic) NSArray *arrayComments;
 @property (nonatomic) NSString *streamID;
+@property (nonatomic) NSString *streamName;
 @property (nonatomic) NSString *assetID;
 @property (nonatomic) BOOL isStreamListing;
 @property (nonatomic) BOOL isVideo;
