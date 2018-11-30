@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ImageDetailCollectionViewCell : UICollectionViewCell
+@interface ImageDetailCollectionViewCell : UICollectionViewCell <UIScrollViewDelegate>
 
 @property (retain,nonatomic) IBOutlet UIImageView *imgMain;
 @property (retain,nonatomic) IBOutlet UIScrollView *scrForLargeView;
@@ -38,4 +38,12 @@
 @property (weak, nonatomic) IBOutlet UIView *contributorImageShadow;
 @property (nonatomic) NSURL *videoURL;
 @property (nonatomic) NSDictionary *asset;
+
+@property (nonatomic, assign) BOOL isImageScaled;
+
+- (void) updateLblMessageCounter : (NSString*) counterValue;
+- (void) updateLblHeartCounter : (NSString*) counterValue;
+
+- (void) updateZoomLevelToMinimum;
+
 @end

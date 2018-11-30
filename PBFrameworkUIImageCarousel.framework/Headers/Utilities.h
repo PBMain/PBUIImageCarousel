@@ -32,3 +32,13 @@
 +(void)loadCustomFonts;
 
 @end
+
+@interface UIView (Constraints)
+
+-(void)addConstraintsToSuperviewWithLeftOffset:(CGFloat)leftOffset topOffset:(CGFloat)topOffset;
+
+-(void)addConstraintsWithWidth:(CGFloat)width height:(CGFloat)height;
+
+-(void)addConstraintsToSuperviewEqual;
+
+@end

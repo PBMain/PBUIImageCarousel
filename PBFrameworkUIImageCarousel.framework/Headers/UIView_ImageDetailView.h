@@ -8,9 +8,7 @@
 - (void)playVideo: (NSURL*) videoUrl;
 @end
 
-@interface ImageDetailView : UIView <UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UIScrollViewDelegate> {
-    NSIndexPath *ind;
-}
+@interface ImageDetailView : UIView <UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UIScrollViewDelegate>
 
 @property (nonatomic) id <ImageDetailViewDelegate> delegate;
 
@@ -46,6 +44,8 @@
 @property (nonatomic) IBOutlet UILabel *lblTime;
 @property (nonatomic) IBOutlet UIView *viewContributorData;
 
+@property (nonatomic, strong) NSIndexPath *selectedIndexPath;
+
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *heightForSmallView;
 @property (retain,nonatomic) IBOutlet NSLayoutConstraint *constraintHeaderHeight;
 
@@ -74,5 +74,9 @@
 @property (nonatomic) NSMutableArray *arrayTinkerbellPlayerLoopers;
 
 @property (nonatomic) BOOL blockRetryOfDeceleration;
+
+// Paging
+@property (nonatomic) int pagingSortDirection;
+@property (nonatomic) BOOL isPaging;
 
 @end

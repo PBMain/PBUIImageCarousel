@@ -12,5 +12,6 @@
 @property (nonatomic, strong) NSString *navTitle;
 @property (nonatomic, strong) NSDate *activityFeedSinceDate;
 @property (nonatomic, assign) BOOL showClearButton;
+@property (nonatomic, strong) NSString *folderID;
 
 @end

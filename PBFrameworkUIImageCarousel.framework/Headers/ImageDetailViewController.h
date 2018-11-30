@@ -32,6 +32,9 @@
 @property (nonatomic) BOOL isPhotoStreamHost;
 @property (nonatomic) BOOL allowDupes;
 
+// Paging
+@property (nonatomic) BOOL pagingIsOn;
+
 -(void) processDisplay;
 -(void) flashScreen;
 -(void) btnBack;
