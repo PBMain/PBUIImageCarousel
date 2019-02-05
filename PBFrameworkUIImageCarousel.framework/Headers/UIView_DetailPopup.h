@@ -2,9 +2,29 @@
 
 #define showDebugFileInfo YES
 
+@class DetailPopup;
+
+@protocol DetailPopupDelegate <NSObject>
+
+@optional
+
+- (void) detailPopupRemoveFromOccasionButtonDidTouch : (DetailPopup*) detailPopup ;
+
+- (void) detailPopupRemoveFromAlbumButtonDidTouch : (DetailPopup*) detailPopup;
+
+- (void) detailPopupRemoveFromPhotoButlerButtonDidTouch : (DetailPopup*) detailPopup;
+
+- (void) detailPopupRemoveFromPhotoStreamButtonDidTouch : (DetailPopup*) detailPopup;
+
+
+@end
+
+
 @interface DetailPopup : UIView {
     
 }
+
+@property (nonatomic, weak) id <DetailPopupDelegate> delegate;
 
 @property (nonatomic) NSString *assetId;
 @property (nonatomic) NSString *filename;
@@ -17,8 +37,8 @@
 
 @property (nonatomic) IBOutlet UIView *viewTop;
 @property (nonatomic) IBOutlet UIView *viewContainer;
-@property (nonatomic) IBOutlet NSLayoutConstraint *heightConstraint;
-@property (nonatomic) IBOutlet NSLayoutConstraint *bottomConstraint;
+@property (nonatomic) IBOutlet NSLayoutConstraint *containerLeftConstraint;
+@property (nonatomic) IBOutlet NSLayoutConstraint *containerRightConstraint;
 
 @property (nonatomic) IBOutlet UIButton *btnCancel;
 @property (nonatomic) IBOutlet UIButton *btnDeleteFromAlbum;
@@ -39,4 +59,5 @@
 -(IBAction)pressRemoveFromPhotoStream:(id)sender;
 -(IBAction)pressCancel:(id)sender;
 
+-(void) refreshViewsAfterRemove:(NSArray*) assetids;
 @end

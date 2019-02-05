@@ -15,7 +15,6 @@
 @end
 
 @interface ImageDuplicateView : UIView <UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UIScrollViewDelegate> {
-    NSIndexPath *ind;
 }
 
 @property (nonatomic, weak) id <ImageDuplicateViewDelegate> delegate;
@@ -73,6 +72,8 @@
 -(IBAction)pressSettings:(id)sender;
 -(IBAction)pressShare:(id)sender;
 -(IBAction)pressSave:(id)sender;
--(void)setDataProper : (NSIndexPath *) indexMain;
+-(void) updateCollectionViewLayouts;
+-(void)rotationEnableORNot:(BOOL)isRotate;
+
 @end
 

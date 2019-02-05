@@ -31,6 +31,10 @@
 @property (nonatomic) IBOutlet UILabel *lblTitle;
 @property (nonatomic) IBOutlet UILabel *lblSavePhoto;
 
+@property (nonatomic) IBOutlet NSLayoutConstraint *containerLeftConstraint;
+@property (nonatomic) IBOutlet NSLayoutConstraint *containerRightConstraint;
+
+
 - (IBAction)pressSMSShare:(id)sender;
 - (IBAction)pressSavePhoto:(id)sender;
 - (IBAction)pressClose:(id)sender;

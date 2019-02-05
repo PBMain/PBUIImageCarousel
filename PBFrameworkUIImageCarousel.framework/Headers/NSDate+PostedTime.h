@@ -13,6 +13,10 @@
 
 + (NSString*) activityHeaderPostedTime : (NSDate*) postedDate;
 
++ (NSString*) activityFeedPostedTime : (NSDate*) postedDate;
+
++ (NSString*) activityFeedPostedTimeShort : (NSDate*) postedDate;
+
 + (NSString*) commentPostedTime : (NSDate*) postedDate;
 
 @end

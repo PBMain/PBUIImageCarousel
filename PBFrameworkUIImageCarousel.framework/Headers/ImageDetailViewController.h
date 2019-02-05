@@ -11,6 +11,7 @@
 #import "UIView_ImageDetailView.h"
 
 @interface ImageDetailViewController : UIViewController
+
 @property (nonatomic) ImageDetailView *imageDetailView;
 @property (nonatomic) IBOutlet UIView *vContainer;
 @property (nonatomic) IBOutlet UIView *vSafeArea;

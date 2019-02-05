@@ -18,6 +18,27 @@ NS_ASSUME_NONNULL_BEGIN
                             lineHeightMultiple : (CGFloat) lineHeightMultiple
                                      alignment : (NSTextAlignment) alignment;
 
++ (NSAttributedString*) commentTextForUserName : (NSString*) userName
+                                       comment : (NSString*) comment
+                             commentDateString : (NSString*) commentDateString
+                                  userNameFont : (UIFont*) userNameFont
+                                 userNameColor : (UIColor*) userNameColor
+                               commentDateFont : (UIFont*) commentDateFont
+                              commentDateColor : (UIColor*) commentDateColor
+                            lineHeightMultiple : (CGFloat) lineHeightMultiple
+                                     alignment : (NSTextAlignment) alignment;
+
+
++ (NSAttributedString*) activityDescriptionTextForUserName : (NSString*) userName
+                                                   andText : (nullable NSString*) andText
+                                                othersText : (nullable NSString*) otherUsers
+                                                   comment : (NSString*) comment
+                                              userNameFont : (UIFont*) userNameFont
+                                             userNameColor : (UIColor*) userNameColor
+                                        lineHeightMultiple : (CGFloat) lineHeightMultiple
+                                                 alignment : (NSTextAlignment) alignment;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

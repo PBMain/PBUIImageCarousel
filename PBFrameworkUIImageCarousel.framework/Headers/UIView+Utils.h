@@ -18,6 +18,13 @@
              radius : (CGFloat) radius
        shadowRadius : (CGFloat) shadowRadius;
 
+-(void) applyShadow : (UIColor*) shadowColor
+      shadowOpacity : (float) opacity
+   showRoundCorners : (BOOL) showRoundCorners
+             radius : (CGFloat) radius
+       shadowRadius : (CGFloat) shadowRadius
+       shadowOffset : (CGSize) shadowOffset;
+
 -(void) addBorderWithColor : (UIColor*) color
                borderWidth : (CGFloat) borderWidth;
 

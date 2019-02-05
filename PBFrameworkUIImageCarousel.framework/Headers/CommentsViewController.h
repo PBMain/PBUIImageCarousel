@@ -1,5 +1,16 @@
 #import <UIKit/UIKit.h>
 
+@class CommentsViewController;
+
+@protocol CommentsViewControllerDelegate <NSObject>
+
+@optional
+
+- (void) commentsViewControllerDidClose :  (CommentsViewController*) commentsViewController;
+
+@end
+
+
 @interface CommentsViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UITextViewDelegate>
 
 @property (retain,nonatomic) IBOutlet UICollectionView *cvComments;
@@ -19,12 +30,15 @@
 @property (retain,nonatomic) IBOutlet UILabel *lblEmptyDescription;
 @property (retain,nonatomic) IBOutlet UIImageView *imgEmptyIcon;
 
+@property (nonatomic, weak) id<CommentsViewControllerDelegate> delegate;
+
 @property (nonatomic) NSArray *arrayComments;
 @property (nonatomic) NSString *streamID;
 @property (nonatomic) NSString *streamName;
 @property (nonatomic) NSString *assetID;
 @property (nonatomic) BOOL isStreamListing;
 @property (nonatomic) BOOL isVideo;
+@property (nonatomic) BOOL isPost;
 @property (nonatomic) NSTimer *timerUpdateTimes;
 
 -(IBAction)pressBack:(id)sender;

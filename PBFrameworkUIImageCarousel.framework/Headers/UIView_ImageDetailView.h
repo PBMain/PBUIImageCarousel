@@ -1,16 +1,28 @@
 #import <UIKit/UIKit.h>
 @import Photos;
 
+@class ImageDetailView;
 
-@protocol ImageDetailViewDelegate
-- (void)btnBack;
-- (void)showComments:(NSString*)urlString;
-- (void)playVideo: (NSURL*) videoUrl;
+@protocol ImageDetailViewDelegate <NSObject>
+
+- (void) playVideo: (NSURL*) videoUrl;
+
+- (void) showCommentsViewController : (ImageDetailView*) imageDetailView
+                        imageObject : (NSDictionary*) imageObject;
+
+- (void) showImageDuplicateViewController : (ImageDetailView*) imageDetailView
+                              imageObject : (NSDictionary*) imageObject
+                          selectedImageId : (int) selectedImageId;
+
+- (void) imageDetailViewBackButtonDidTouch : (ImageDetailView*) imageDetailView;
+
+- (void) showDetailPopupForImageObject : (NSDictionary*) imageObject;
+
 @end
 
-@interface ImageDetailView : UIView <UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UIScrollViewDelegate>
+@interface ImageDetailView : UIView <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UIScrollViewDelegate>
 
-@property (nonatomic) id <ImageDetailViewDelegate> delegate;
+@property (nonatomic, weak) id <ImageDetailViewDelegate> delegate;
 
 @property (nonatomic) UICollectionView *gridLarge;
 @property (nonatomic) UICollectionView *gridSmall;
@@ -19,7 +31,7 @@
 @property (strong) PHFetchResult *assetsFetchResults;
 @property (strong) PHCachingImageManager* imageManager;
 @property (nonatomic) PHImageRequestOptions *requestOptions;
-@property (nonatomic) int startIndex;
+@property (nonatomic, assign) int startIndex;
 @property (nonatomic) NSString *dateString;
 @property (nonatomic) NSString *magicAlbumId;
 @property (nonatomic) NSString *magicAlbumName;
@@ -36,10 +48,13 @@
 @property (nonatomic, assign) BOOL allowDupes;
 @property (nonatomic) IBOutlet UIView *largeImageUIView;
 @property (nonatomic) IBOutlet UIView *smallImageUIView;
-@property (nonatomic) IBOutlet UIToolbar *toolbar;
-@property (nonatomic) IBOutlet UIBarButtonItem *backButton;
-@property (nonatomic) IBOutlet UIBarButtonItem *settingsButton;
-@property (nonatomic) IBOutlet UIBarButtonItem *shareButton;
+
+@property (nonatomic) IBOutlet UIView *viewNavigation;
+
+@property (nonatomic) IBOutlet UIButton *backButton;
+@property (nonatomic) IBOutlet UIButton *settingsButton;
+@property (nonatomic) IBOutlet UIButton *shareButton;
+
 @property (nonatomic) IBOutlet UILabel *lblLocation;
 @property (nonatomic) IBOutlet UILabel *lblTime;
 @property (nonatomic) IBOutlet UIView *viewContributorData;
@@ -48,6 +63,8 @@
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *heightForSmallView;
 @property (retain,nonatomic) IBOutlet NSLayoutConstraint *constraintHeaderHeight;
+@property (retain,nonatomic) IBOutlet NSLayoutConstraint *constraintSettingsButtonWidth;
+
 
 @property (nonatomic) BOOL isRotateOrCome;
 
@@ -67,6 +84,8 @@
 -(IBAction)pressShare:(id)sender;
 -(void)setDataProper : (NSIndexPath *) indexMain;
 -(void)updateImage:(NSDictionary*)asset byFileName:(NSString*)fileName andCaptureDate:(NSString*)captureDate;
+-(void)rotationEnableORNot:(BOOL)isRotate;
+-(void)updateContentOffset;
 
 // So bad
 @property (nonatomic) NSTimer *timerTinkerbellRealLinkPolling;
