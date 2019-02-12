@@ -30,9 +30,11 @@
 @property (nonatomic) UIDocumentInteractionController *docController;
 @property (nonatomic) IBOutlet UILabel *lblTitle;
 @property (nonatomic) IBOutlet UILabel *lblSavePhoto;
+@property (nonatomic) IBOutlet UIView *vSocialSharing;
 
 @property (nonatomic) IBOutlet NSLayoutConstraint *containerLeftConstraint;
 @property (nonatomic) IBOutlet NSLayoutConstraint *containerRightConstraint;
+@property (nonatomic) IBOutlet NSLayoutConstraint *constraintSaveContainerRight;
 
 
 - (IBAction)pressSMSShare:(id)sender;
