@@ -29,6 +29,9 @@
 // Check asset array for children that aren't in their parent's array and place them there
 +(void)putChildrenUnderParents:(NSArray*)arrayOfAssets completion:(void(^)(NSArray* parents, NSArray* childen))completion;
 
+// Get a UIColor from a string representation
++(UIColor*)colorFromHexString:(NSString*)hexString;
+
 +(void)loadCustomFonts;
 
 @end
