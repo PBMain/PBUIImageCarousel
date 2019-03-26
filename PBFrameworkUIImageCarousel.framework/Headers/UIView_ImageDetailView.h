@@ -44,6 +44,7 @@
 @property (nonatomic) NSIndexPath *indexMainForCell;
 @property (nonatomic) BOOL shouldUnhideToolbarOnExit;
 @property (nonatomic) BOOL isPhotoStream;
+@property (nonatomic) NSString *postID;
 @property (nonatomic) BOOL isPhotoStreamHost;
 @property (nonatomic, assign) BOOL allowDupes;
 @property (nonatomic) IBOutlet UIView *largeImageUIView;

@@ -4,7 +4,7 @@
 #import <QuartzCore/QuartzCore.h>
 @import Photos;
 
-@interface MoreWaysToShareView : UIView <MFMailComposeViewControllerDelegate,MFMessageComposeViewControllerDelegate, FBSDKSharingDelegate> {
+@interface MoreWaysToShareView : UIView <MFMailComposeViewControllerDelegate,MFMessageComposeViewControllerDelegate, FBSDKSharingDelegate, UIDocumentInteractionControllerDelegate> {
     
 }
 
@@ -16,6 +16,7 @@
 @property (nonatomic) NSString *hashTags;
 @property (nonatomic) UIImage *theImage;
 @property (nonatomic) NSString *videoLink;
+@property (nonatomic) NSString *postID;
 @property (nonatomic) PHAsset *assetToDelete;
 
 @property (nonatomic) IBOutlet UIView *viewBackground;
@@ -30,17 +31,19 @@
 @property (nonatomic) UIDocumentInteractionController *docController;
 @property (nonatomic) IBOutlet UILabel *lblTitle;
 @property (nonatomic) IBOutlet UILabel *lblSavePhoto;
-@property (nonatomic) IBOutlet UIView *vSocialSharing;
+
+@property (nonatomic) IBOutlet UIView *facebookContainerView;
+@property (nonatomic) IBOutlet UIView *instagramContainerView;
 
 @property (nonatomic) IBOutlet NSLayoutConstraint *containerLeftConstraint;
 @property (nonatomic) IBOutlet NSLayoutConstraint *containerRightConstraint;
-@property (nonatomic) IBOutlet NSLayoutConstraint *constraintSaveContainerRight;
-
 
 - (IBAction)pressSMSShare:(id)sender;
 - (IBAction)pressSavePhoto:(id)sender;
 - (IBAction)pressClose:(id)sender;
 - (IBAction)pressInstagram:(id)sender;
+
+- (void)eventViewDidShow;
 
 // For mixpanel
 @property (nonatomic) NSString *streamID;

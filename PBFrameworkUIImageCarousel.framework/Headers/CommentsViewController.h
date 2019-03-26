@@ -25,6 +25,9 @@
 @property (retain,nonatomic) IBOutlet NSLayoutConstraint *constraintTextEntryFromBottom;
 @property (retain,nonatomic) IBOutlet NSLayoutConstraint *constraintTextEntryHeight;
 
+@property (retain,nonatomic) IBOutlet NSLayoutConstraint *constraintContentFromBottom;
+@property (retain,nonatomic) IBOutlet NSLayoutConstraint *constraintContentFromTop;
+
 // Parts of the empty state
 @property (retain,nonatomic) IBOutlet UILabel *lblEmptyTitle;
 @property (retain,nonatomic) IBOutlet UILabel *lblEmptyDescription;
@@ -39,6 +42,7 @@
 @property (nonatomic) BOOL isStreamListing;
 @property (nonatomic) BOOL isVideo;
 @property (nonatomic) BOOL isPost;
+@property (nonatomic) BOOL isUpdatingNavBarConstraint;
 @property (nonatomic) NSTimer *timerUpdateTimes;
 
 -(IBAction)pressBack:(id)sender;

@@ -16,6 +16,7 @@
 @property (nonatomic) AVPlayerLayer *playerLayer;
 @property (nonatomic) AVPlayer *player;
 @property (nonatomic) AVAsset *asset;
+@property (nonatomic) NSString *postID;
 @property (nonatomic) NSDictionary *assetObjectFromLocalDB;
 @property (weak, nonatomic) IBOutlet UIView *navigationView;
 @property (weak, nonatomic) IBOutlet UIView *statusbarView;

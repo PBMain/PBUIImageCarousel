@@ -35,6 +35,7 @@
 @property (nonatomic) NSString *userToImpersonate;
 @property (nonatomic) NSString *sharedAlbumId;
 @property (nonatomic) NSString *title;
+@property (nonatomic) NSString *postID;
 @property (nonatomic) NSIndexPath *indexMainForCell;
 @property (nonatomic) BOOL shouldUnhideToolbarOnExit;
 @property (nonatomic) BOOL isPhotoStream;

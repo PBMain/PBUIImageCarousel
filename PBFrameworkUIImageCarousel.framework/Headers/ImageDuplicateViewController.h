@@ -23,6 +23,7 @@
 @property (nonatomic) NSString *albumName;
 @property (nonatomic) NSString *occasionId;
 @property (nonatomic) NSString *occasionName;
+@property (nonatomic) NSString *postID;
 @property (nonatomic) NSNumber *startMasterAssetId;
 @property (nonatomic) BOOL isPhotoStream;
 @property (nonatomic) BOOL isSetting;
