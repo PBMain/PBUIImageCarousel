@@ -33,5 +33,4 @@
 #import <PBFrameworkServices/ServicesUploadsSelected.h>
 #import <PBFrameworkServices/ServicesUploadsVideo.h>
 #import <PBFrameworkServices/UmbHeader.h>
-#import <PBFrameworkServices/UserInfo.h>
 #import <PBFrameworkServices/ViewCollector.h>

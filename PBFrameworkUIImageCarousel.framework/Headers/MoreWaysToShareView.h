@@ -1,10 +1,9 @@
 #import <UIKit/UIKit.h>
 #import <MessageUI/MessageUI.h>
-#import <FBSDKShareKit/FBSDKShareKit.h>
 #import <QuartzCore/QuartzCore.h>
 @import Photos;
 
-@interface MoreWaysToShareView : UIView <MFMailComposeViewControllerDelegate,MFMessageComposeViewControllerDelegate, FBSDKSharingDelegate, UIDocumentInteractionControllerDelegate> {
+@interface MoreWaysToShareView : UIView <MFMailComposeViewControllerDelegate,MFMessageComposeViewControllerDelegate, UIDocumentInteractionControllerDelegate> {
     
 }
 
@@ -48,5 +47,10 @@
 // For mixpanel
 @property (nonatomic) NSString *streamID;
 @property (nonatomic) NSString *streamName;
+@property (nonatomic) NSTimer *timerPopupWatcher;
+@property (nonatomic) BOOL hasSentShareEvent;
+
+// For using iOS sharing dialog
+- (void)useDocController;
 
 @end
