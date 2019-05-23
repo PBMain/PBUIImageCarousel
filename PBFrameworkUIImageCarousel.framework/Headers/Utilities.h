@@ -45,3 +45,9 @@
 -(void)addConstraintsToSuperviewEqual;
 
 @end
+
+@interface UIViewController (TopViewController)
+    
++(UIViewController*)topViewController;
+    
+@end
