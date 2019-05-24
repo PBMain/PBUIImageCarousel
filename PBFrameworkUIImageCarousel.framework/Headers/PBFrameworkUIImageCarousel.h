@@ -14,10 +14,10 @@ FOUNDATION_EXPORT double PBFrameworkUIImageCarouselVersionNumber;
 //! Project version string for PBFrameworkUIImageCarousel.
 FOUNDATION_EXPORT const unsigned char PBFrameworkUIImageCarouselVersionString[];
 
+#import <PBFrameworkUIImageCarousel/FileSharingService.h>
 #import <PBFrameworkUIImageCarousel/ImageDuplicateViewController.h>
 #import <PBFrameworkUIImageCarousel/PBVideoSliderBasic.h>
 #import <PBFrameworkUIImageCarousel/ICGThumbView.h>
-#import <PBFrameworkUIImageCarousel/CommentWebViewController.h>
 #import <PBFrameworkUIImageCarousel/PBVideoUploadsBanner.h>
 #import <PBFrameworkUIImageCarousel/ImageDuplicateCollectionViewCell.h>
 #import <PBFrameworkUIImageCarousel/CommentsViewController.h>
@@ -26,12 +26,10 @@ FOUNDATION_EXPORT const unsigned char PBFrameworkUIImageCarouselVersionString[];
 #import <PBFrameworkUIImageCarousel/UIView_DetailPopup.h>
 #import <PBFrameworkUIImageCarousel/LoadingView.h>
 #import <PBFrameworkUIImageCarousel/ICGVideoTrimmerView.h>
-#import <PBFrameworkUIImageCarousel/CommentWebView.h>
 #import <PBFrameworkUIImageCarousel/CommentsYourCommentCell.h>
 #import <PBFrameworkUIImageCarousel/PBPendingVideosVC.h>
 #import <PBFrameworkUIImageCarousel/ImageDetailCollectionViewCell.h>
 #import <PBFrameworkUIImageCarousel/PBPodUIImageCarousel_ServicesHeaders.h>
-#import <PBFrameworkUIImageCarousel/FavoritesViewIndicator.h>
 #import <PBFrameworkUIImageCarousel/PBVideoTrimmer.h>
 #import <PBFrameworkUIImageCarousel/PBPendingVideoCell.h>
 #import <PBFrameworkUIImageCarousel/LocationServicesDeniedView.h>
