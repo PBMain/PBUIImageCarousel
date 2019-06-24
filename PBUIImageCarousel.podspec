@@ -28,5 +28,6 @@ Pod::Spec.new do |s|
   s.dependency "PBAnalytics"
   s.dependency "PBUILibraries"
   s.dependency "AFNetworking"
+  s.dependency "FBSDKShareKit"
   
 end
