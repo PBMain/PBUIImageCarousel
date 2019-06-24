@@ -21,6 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
                  streamName : (NSString*) streamName
                      postId : (NSString*) posId;
 
+- (void) shareToFacebook:(NSArray*)images;
+
 - (void) presentDocumentInteractionControllerInView : (UIView*) view;
 
 - (void) invalidate;

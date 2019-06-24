@@ -1,9 +1,11 @@
 #import <UIKit/UIKit.h>
 #import <MessageUI/MessageUI.h>
 #import <QuartzCore/QuartzCore.h>
+#import <FBSDKShareKit/FBSDKShareKit.h>
+
 @import Photos;
 
-@interface MoreWaysToShareView : UIView <MFMailComposeViewControllerDelegate,MFMessageComposeViewControllerDelegate, UIDocumentInteractionControllerDelegate> {
+@interface MoreWaysToShareView : UIView <MFMailComposeViewControllerDelegate,MFMessageComposeViewControllerDelegate, UIDocumentInteractionControllerDelegate, FBSDKSharingDelegate> {
     
 }
 
