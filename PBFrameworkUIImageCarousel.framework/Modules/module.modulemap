@@ -4,3 +4,8 @@ framework module PBFrameworkUIImageCarousel {
   export *
   module * { export * }
 }
+
+module PBFrameworkUIImageCarousel.Swift {
+    header "PBFrameworkUIImageCarousel-Swift.h"
+    requires objc
+}

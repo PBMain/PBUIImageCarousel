@@ -96,7 +96,19 @@
 @property (nonatomic) BOOL blockRetryOfDeceleration;
 
 // Paging
-@property (nonatomic) int pagingSortDirection;
-@property (nonatomic) BOOL isPaging;
+@property (nonatomic) NSString *streamID;
+@property (nonatomic) NSString *categoryName;
+@property (nonatomic) NSString *streamName;
+@property (nonatomic) NSString *categoryID;
+@property (nonatomic) BOOL isHighlights;
+@property (nonatomic) BOOL isAllPhotos;
+@property (nonatomic) int pagesLoaded;
+@property (nonatomic) int assetCount;
+@property (nonatomic) BOOL isHost;
+@property (nonatomic) BOOL isLoadingPage;
+@property (nonatomic) BOOL doneLoadingAllPages;
+@property (nonatomic) BOOL didLayout;
+@property (nonatomic) BOOL isMapCategory;
+@property (nonatomic) BOOL sortAscending;
 
 @end

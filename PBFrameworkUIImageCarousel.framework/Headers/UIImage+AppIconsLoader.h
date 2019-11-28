@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (UIImage*) iconName : (NSString*) iconName currentBundle : (NSBundle*) bundle;
 
++ (UIImage*) streamPlaceholder : (NSBundle*) bundle;
 
 @end
 

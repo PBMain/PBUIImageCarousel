@@ -17,6 +17,7 @@
 @property (nonatomic) NSString *hashTags;
 @property (nonatomic) UIImage *theImage;
 @property (nonatomic) NSString *videoLink;
+@property (nonatomic) PHAsset *videoAsset;
 @property (nonatomic) NSString *postID;
 @property (nonatomic) PHAsset *assetToDelete;
 
@@ -35,9 +36,11 @@
 
 @property (nonatomic) IBOutlet UIView *facebookContainerView;
 @property (nonatomic) IBOutlet UIView *instagramContainerView;
+@property (nonatomic) IBOutlet UIView *viewSaveLocalContainer;
 
 @property (nonatomic) IBOutlet NSLayoutConstraint *containerLeftConstraint;
 @property (nonatomic) IBOutlet NSLayoutConstraint *containerRightConstraint;
+@property (nonatomic) IBOutlet NSLayoutConstraint *contentBottomConstraint;
 
 - (IBAction)pressSMSShare:(id)sender;
 - (IBAction)pressSavePhoto:(id)sender;

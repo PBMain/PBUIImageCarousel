@@ -35,6 +35,8 @@
 @property (nonatomic) NSString *occasionId;
 @property (nonatomic) NSString *occasionName;
 
+@property (nonatomic) NSDictionary *assetData;
+
 @property (nonatomic) IBOutlet UIView *viewTop;
 @property (nonatomic) IBOutlet UIView *viewContainer;
 @property (nonatomic) IBOutlet NSLayoutConstraint *containerLeftConstraint;

@@ -3,12 +3,12 @@
 //  PhotoButler
 //
 //  Created by Mirant on 10/10/16.
-//  Copyright © 2016 blurbIQ. All rights reserved.
+//  Copyright © 2016 Photo Butler. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-#import "UIView_ImageDetailView.h"
+@class ImageDetailView;
 
 @interface ImageDetailViewController : UIViewController
 
