@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'PBUIImageCarousel'
-  s.version          = '1.5.0.0'
+  s.version          = '1.5.0.1'
   s.summary          = 'Pod used to show image carousel in Photo Butler apps.'
   
   s.description      = <<-DESC
