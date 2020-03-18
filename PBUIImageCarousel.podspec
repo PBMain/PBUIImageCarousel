@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'PBUIImageCarousel'
-  s.version          = '1.5.1.1'
+  s.version          = '1.5.2.1'
   s.summary          = 'Pod used to show image carousel in Photo Butler apps.'
   
   s.description      = <<-DESC
@@ -12,8 +12,8 @@ Pod::Spec.new do |s|
   s.author           = { 'danspencer@photobutler.com' => 'danspencer@photobutler.com' }
   s.source           = { :git => 'https://github.com/PBMain/PBUIImageCarousel.git', :tag => s.version.to_s }
   
-  s.ios.deployment_target = '9.3'
-  s.platform = :ios, '9.3'
+  s.ios.deployment_target = '10.0'
+  s.platform = :ios, '10.0'
   s.swift_version = '4.1'
 
   #s.source_files = 'PBUIImageCarousel/Classes/**/*'
