@@ -11,6 +11,9 @@
 +(NSMutableArray*)sortUpcomingStreamArray:(NSArray*)toSort;
 +(NSMutableArray*)sortPastStreamArray:(NSArray*)toSort;
 
++ (BOOL) isAppExtension;
++ (UIApplication *) sharedUIApplication;
+
 // Show permissions popups for anything we don't have yet
 +(void)showPermissionsSweep:(UIViewController*)vc completionBlock:(void (^)(void))completionBlock;
 +(void)showNamePopup:(UIViewController*)vc completionBlock:(void (^)(void))completionBlock;
