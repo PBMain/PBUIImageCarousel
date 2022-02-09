@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'PBUIImageCarousel'
-  s.version          = '1.5.4.2'
+  s.version          = '1.6.0.0'
   s.summary          = 'Pod used to show image carousel in Photo Butler apps.'
   
   s.description      = <<-DESC
@@ -28,6 +28,5 @@ Pod::Spec.new do |s|
   s.dependency "PBAnalytics"
   s.dependency "PBUILibraries"
   s.dependency "AFNetworking"
-  s.dependency "FBSDKShareKit"
   
 end

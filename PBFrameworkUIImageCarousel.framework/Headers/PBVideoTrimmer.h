@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *clipName;
 @property (weak, nonatomic) IBOutlet UILabel *clipTime;
 @property (weak, nonatomic) IBOutlet UIView *playButtonView;
+@property (weak, nonatomic) IBOutlet UIView *viewLoadingContainer;
 @property (nonatomic) NSString *videoName;
 @property (nonatomic) NSString *videoLength;
 @property (nonatomic) NSString *streamID;

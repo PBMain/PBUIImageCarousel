@@ -19,6 +19,9 @@
 -(void) hideEditDelete;
 -(void) showEditDelete;
 
+- (void) showReport;
+- (void) hideReport;
+
 -(IBAction)pressEdit:(id)sender;
 -(IBAction)pressDelete:(id)sender;
 

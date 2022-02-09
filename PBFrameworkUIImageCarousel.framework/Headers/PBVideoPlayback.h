@@ -1,5 +1,6 @@
 
 #import <UIKit/UIKit.h>
+#import "LoadingView.h"
 
 @class AVPlayer;
 @class AVPlayerLayer;
@@ -20,6 +21,7 @@
 @property (nonatomic) NSDictionary *assetObjectFromLocalDB;
 @property (weak, nonatomic) IBOutlet UIView *navigationView;
 @property (weak, nonatomic) IBOutlet UIView *statusbarView;
+@property (weak, nonatomic) IBOutlet LoadingView *loadingView;
 
 @property (nonatomic) float currentScrubberPosition;
 

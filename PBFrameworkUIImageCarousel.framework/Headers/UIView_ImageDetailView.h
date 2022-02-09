@@ -10,6 +10,10 @@
 - (void) showCommentsViewController : (ImageDetailView*) imageDetailView
                         imageObject : (NSDictionary*) imageObject;
 
+- (void) showCreatePOIAlert : (ImageDetailView*) imageDetailView imageMeta : (NSDictionary*) imageMeta image : (UIImage*) image;
+
+- (void) showAddPOIMenu : (ImageDetailView*) imageDetailView imageMeta : (NSDictionary*) imageMeta image : (UIImage*) image;
+
 - (void) showImageDuplicateViewController : (ImageDetailView*) imageDetailView
                               imageObject : (NSDictionary*) imageObject
                           selectedImageId : (int) selectedImageId;
@@ -17,6 +21,20 @@
 - (void) imageDetailViewBackButtonDidTouch : (ImageDetailView*) imageDetailView;
 
 - (void) showDetailPopupForImageObject : (NSDictionary*) imageObject;
+
+- (void) showReportDialog: (NSString *) ownerId asssetId: (NSString *) assetId;
+
+- (void) showAlertView: (UIAlertController *) alert;
+
+- (void) showFANtasticPhotoForImage: (UIImage *) image;
+
+- (void) saveCategoryToAlbum;
+
+- (void) saveCategoryToZIP;
+
+- (void) saveStreamToAlbum;
+
+- (void) saveStreamToZIP;
 
 @end
 
@@ -66,7 +84,6 @@
 @property (retain,nonatomic) IBOutlet NSLayoutConstraint *constraintHeaderHeight;
 @property (retain,nonatomic) IBOutlet NSLayoutConstraint *constraintSettingsButtonWidth;
 
-
 @property (nonatomic) BOOL isRotateOrCome;
 
 @property (nonatomic) NSString *avtarOfHost;
@@ -87,6 +104,11 @@
 -(void)updateImage:(NSDictionary*)asset byFileName:(NSString*)fileName andCaptureDate:(NSString*)captureDate;
 -(void)rotationEnableORNot:(BOOL)isRotate;
 -(void)updateContentOffset;
+- (void) removeReportedAsset: (NSString *) assetId;
+- (void) removeReportedUser: (NSString *) userId;
+
+// Refreshes the POI creation UI after creating a POI
+-(void) refreshPOIStatusOnCurrentCell;
 
 // So bad
 @property (nonatomic) NSTimer *timerTinkerbellRealLinkPolling;
@@ -100,9 +122,17 @@
 @property (nonatomic) NSString *categoryName;
 @property (nonatomic) NSString *streamName;
 @property (nonatomic) NSString *categoryID;
+@property (nonatomic) NSString *personID;
+
 @property (nonatomic) BOOL isHighlights;
 @property (nonatomic) BOOL isAllPhotos;
+@property (nonatomic) BOOL isCategories;
+@property (nonatomic) BOOL isPersonImages;
+@property (nonatomic) BOOL isMyImages;
+
 @property (nonatomic) int pagesLoaded;
+@property (nonatomic) int pageSize;
+
 @property (nonatomic) int assetCount;
 @property (nonatomic) BOOL isHost;
 @property (nonatomic) BOOL isLoadingPage;
@@ -110,5 +140,7 @@
 @property (nonatomic) BOOL didLayout;
 @property (nonatomic) BOOL isMapCategory;
 @property (nonatomic) BOOL sortAscending;
+
+@property (nonatomic) BOOL stopReloadingCells;
 
 @end

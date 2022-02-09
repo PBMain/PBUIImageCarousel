@@ -1,6 +1,6 @@
 //
 //  UIImage+AppIconsLoader.h
-//  PBPodUIImageCarousel
+//  PBFrameworkUIImageCarousel
 //
 //  Created by Michael Liptuga on 2/11/19.
 //

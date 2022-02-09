@@ -1,6 +1,6 @@
 //
 //  FileSharingService.h
-//  PBPodUIImageCarousel
+//  PBFrameworkUIImageCarousel
 //
 //  Created by Michael Liptuga on 5/15/19.
 //

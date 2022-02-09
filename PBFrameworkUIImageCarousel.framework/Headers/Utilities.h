@@ -20,6 +20,7 @@
 +(void)showPermissionsLocations:(UIViewController*)vc completionBlock:(void (^)(void))completionBlock;
 +(void)showPermissionsCamera:(UIViewController*)vc completionBlock:(void (^)(void))completionBlock;
 +(void)showPermissionsLibrary:(UIViewController*)vc completionBlock:(void (^)(void))completionBlock;
++(void)showLimitedLibraryPicker:(UIViewController *)vc completionBlock:(void (^)(void))completionBlock;
 +(void)showPermissionsContacts:(UIViewController*)vc completionBlock:(void (^)(void))completionBlock;
 +(void)showPermissionsPushNotifications:(UIViewController*)vc completionBlock:(void (^)(void))completionBlock;
 

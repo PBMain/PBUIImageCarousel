@@ -1,6 +1,6 @@
 //
 //  UIImageView+Letters.h
-//  PBPodUIImageCarousel
+//  PBFrameworkUIImageCarousel
 //
 //  Created by Michael Liptuga on 12/12/18.
 //

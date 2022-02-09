@@ -8,8 +8,10 @@
 @property (nonatomic) IBOutlet UIButton *btnEdit;
 @property (nonatomic) IBOutlet UIView *vBackground;
 @property (nonatomic) IBOutlet UIView *vEditDeleteView;
+@property (nonatomic) IBOutlet UIView *vReportView;
 @property (nonatomic) IBOutlet UIImageView *imgPerson;
 @property (nonatomic) IBOutlet NSLayoutConstraint *constraintEditHeight;
+@property (nonatomic) IBOutlet NSLayoutConstraint *constraintReportHeight;
 
 @property (nonatomic) NSDate *timePosted;
 @property (nonatomic) NSDictionary *commentObject;
@@ -18,6 +20,10 @@
 -(BOOL) isShowingEditDelete;
 -(void) hideEditDelete;
 -(void) showEditDelete;
+-(BOOL) isShowingReport;
+
+- (void) showReport;
+- (void) hideReport;
 
 -(IBAction)pressEdit:(id)sender;
 -(IBAction)pressDelete:(id)sender;
